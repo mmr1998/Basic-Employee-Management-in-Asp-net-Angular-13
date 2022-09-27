@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\asp\\project\\EmployeeAPI\\EmployeeAPI\\EmployeeAPI.csproj": {}
+    "D:\\asp\\project\\Basic-Employee-Management-in-Asp-net-Angular-13\\EmployeeAPI\\EmployeeAPI.csproj": {}
   },
   "projects": {
-    "D:\\asp\\project\\EmployeeAPI\\EmployeeAPI\\EmployeeAPI.csproj": {
+    "D:\\asp\\project\\Basic-Employee-Management-in-Asp-net-Angular-13\\EmployeeAPI\\EmployeeAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\asp\\project\\EmployeeAPI\\EmployeeAPI\\EmployeeAPI.csproj",
+        "projectUniqueName": "D:\\asp\\project\\Basic-Employee-Management-in-Asp-net-Angular-13\\EmployeeAPI\\EmployeeAPI.csproj",
         "projectName": "EmployeeAPI",
-        "projectPath": "D:\\asp\\project\\EmployeeAPI\\EmployeeAPI\\EmployeeAPI.csproj",
+        "projectPath": "D:\\asp\\project\\Basic-Employee-Management-in-Asp-net-Angular-13\\EmployeeAPI\\EmployeeAPI.csproj",
         "packagesPath": "C:\\Users\\mrmmr\\.nuget\\packages\\",
-        "outputPath": "D:\\asp\\project\\EmployeeAPI\\EmployeeAPI\\obj\\",
+        "outputPath": "D:\\asp\\project\\Basic-Employee-Management-in-Asp-net-Angular-13\\EmployeeAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mrmmr\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -72,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
