@@ -1,12 +1,12 @@
 
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary float-right m-2" data-toggle="modal" data-target="#exampleModal" (click)="addClick()" data-backup="static" data-keyboard="false">
-    Add
-  </button>
+  <i class="fas fa-plus"></i>
+</button>
   
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">{{modalTitle}}</h5>
@@ -15,7 +15,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <app-add-department  *ngIf="ActivateAddEditDepComp"></app-add-department>
+          <app-add-department [dep]="dep"  *ngIf="ActivateAddEditDepComp"></app-add-department>
         </div>
         <!-- <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -40,8 +40,8 @@
             <td>{{item.DepartmentName}}</td>
             <td> {{item.Status}} </td>
             <td>
-                <button type="button" class="btn btn-light mr-1">Edit</button>
-                <button type="button" class="btn btn-light mr-1">Delete</button>
+                <button type="button" class="btn btn-primary  m-2" data-toggle="modal" data-target="#exampleModal" (click)="editClick(item)" data-backup="static" data-keyboard="false"><i class="fas fa-edit"></i></button>
+                <button type="button" class="btn btn-light mr-1" (click)="deleteclick(item)"><i class="fas fa-trash-alt"></i></button>
             </td>
         </tr>
     </tbody>

@@ -21,7 +21,7 @@ export class ShowDepartmentComponent implements OnInit {
   addClick(){
     this.dep={
       DepartmentId:0,
-      DepartmentName:"",
+      DepartmentName:'',
       Status:1
     }
     this.modalTitle="Add Department";
@@ -31,6 +31,21 @@ export class ShowDepartmentComponent implements OnInit {
   closeClick(){
     this.ActivateAddEditDepComp=false;
     this.getDeptList();
+  }
+
+  editClick(item:any){
+    this.dep=item;
+    console.log(this.dep);
+    this.modalTitle="Edit Department";
+    this.ActivateAddEditDepComp=true;
+  }
+  deleteclick(item:any){
+    if(confirm('Are you Sure?')){
+      this.service.deleteDepartment(item.DepartmentId).subscribe(res=>{
+        alert(res.toString());
+        this.getDeptList();
+      });
+    }
   }
 
   getDeptList(){

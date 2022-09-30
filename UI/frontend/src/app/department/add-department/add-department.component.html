@@ -1,1 +1,12 @@
-<p>add works!</p>
+<div class="form-group row">
+    <label class="col-sm-2 col-form-label">Department Name</label>
+    <div class="col-sm-5">
+        <input type="text" class="form-control" [(ngModel)]="DepartmentName" placeholder="Enter Department Name">
+    </div>
+    <div class="col-sm-5">
+        <input type="text" class="form-control" [(ngModel)]="Status" placeholder="Enter Status">
+    </div>
+</div>
+
+<button (click)="addDepartment()" *ngIf="dep.DepartmentId==0" class="btn btn-primary">Add</button>
+<button (click)="updateDepartment()" *ngIf="dep.DepartmentId!=0" class="btn btn-primary">Update</button>
